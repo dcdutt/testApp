@@ -74,3 +74,12 @@ Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-05-05 07:34:0
 [0m
   [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
 Completed in 156ms (View: 23, DB: 1) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-05-05 14:52:12) [GET]
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 175ms (View: 16, DB: 1) | 200 OK [http://localhost/rails/info/properties]
